@@ -5,9 +5,14 @@ pipeline {
         timeout(time: 1, unit: 'SECONDS')
     }
     stages {
-        stage('Example') {
+        stage('Stage1') {
             steps {
                 echo 'Hello World'
+            }
+        }
+        stage('Stage2') {
+            steps {
+                echo 'added a new stage called stage 2'
             }
         }
     }
